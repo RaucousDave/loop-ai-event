@@ -52,7 +52,7 @@ const Hero = () => {
         <h2 className="text-4xl md:text-6xl font-extrabold drop-shadow-xl">
           Loop.AI Event 2025
         </h2>
-        <p className="text-lg text-black md:text-xl mt-4 max-w-xl text-white/80">
+        <p className="text-lg text-black md:text-xl mt-4 max-w-xl">
           Join Africa’s boldest creators at the intersection of AI and
           storytelling.
         </p>
