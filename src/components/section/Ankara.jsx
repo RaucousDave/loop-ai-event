@@ -41,13 +41,13 @@ export default function Ankara() {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-[80vh] px-6">
         <h1 className="text-5xl md:text-7xl font-semibold tracking-tighter text-slate-900">
-          Welcome to Gbedu City
+          The Loop Launch Party
         </h1>
         <p className="mt-4 text-lg text-slate-800 max-w-2xl">
           One city. One rhythm. Many voices.
         </p>
         <button className="mt-6 px-8 py-4 bg-slate-900 text-white font-semibold rounded-xl hover:bg-[#a21b1b] transition">
-          Join The Waitlist
+          Get Your Tickets
         </button>
       </div>
     </section>
