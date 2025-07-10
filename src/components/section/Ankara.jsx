@@ -12,6 +12,13 @@ export default function Ankara() {
         }}
       />
       <div
+        className="absolute bottom-[-80px] left-[-100px] h-[320px] w-[320px] sm:w-[400px] sm:h-[400px] bg-cover bg-no-repeat mix-blend-multiply opacity-80"
+        style={{
+          backgroundImage: `url('/images/ankara-3.jpg')`,
+          clipPath: `polygon(20% 0%, 80% 10%, 100% 40%, 80% 80%, 40% 100%, 0% 70%, 0% 30%)`,
+        }}
+      />
+      <div
         className="absolute bottom-[-100px] right-[-120px] w-[350px] h-[350px] bg-cover bg-no-repeat mix-blend-multiply opacity-80"
         style={{
           backgroundImage: `url('/images/ankara-2.jpg')`,
