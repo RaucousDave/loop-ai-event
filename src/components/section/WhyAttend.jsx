@@ -1,58 +1,52 @@
-import React from "react";
-import { Brain, Rocket } from "lucide-react";
-import { Mic } from "lucide-react";
+import { Drum, Brain, Globe, Theater } from "lucide-react";
 
-const features = [
+const points = [
   {
-    icon: <Brain size={32} />,
-    title: "Culturally Intelligent AI",
-    description:
-      "Loop.AI is tuned for African voices, languages, and styles — not western defaults.",
-    flip: false,
+    icon: <Drum className="text-[#fbbf24]" size={32} />, // Yellow (drum vibes)
+    title: "Feel the Rhythm",
+    desc: "Experience live sessions and music collabs from the heart of African creativity.",
   },
   {
-    icon: <Mic size={32} />,
-    title: "Live Demos & Jam Sessions",
-    description:
-      "Join interactive workshops where creators test Loop.AI tools in real-time.",
-    flip: true,
+    icon: <Brain className="text-[#22d3ee]" size={32} />, // Electric blue
+    title: "Learn from Visionaries",
+    desc: "Creators, designers, and AI innovators who speak your language and share your story.",
   },
   {
-    icon: <Rocket size={32} />,
-    title: "Tools that Understand You",
-    description:
-      "From ideation to production, we’re building tools made for *your* process.",
-    flip: false,
+    icon: <Theater className="text-[#ec4899]" size={32} />, // Pink heritage
+    title: "Celebrate Culture",
+    desc: "From digital fashion to storytelling, this is the homecoming of African expression.",
+  },
+  {
+    icon: <Globe className="text-[#10b981]" size={32} />, // Green for unity
+    title: "Connect Globally",
+    desc: "Build real community with fellow creatives across the continent and diaspora.",
   },
 ];
 
-const WhyAttend = () => {
+export default function WhyAttend() {
   return (
-    <section className="bg-black py-20 px-6 sm:px-8 md:px-12 text-white">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16">
-          Why Attend Loop.AI Summit?
+    <section className="bg-[#5e2d2d] py-20 px-6 text-[#fefae0]">
+      <div className="max-w-4xl mx-auto text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold">
+          Why Attend Gbedu City?
         </h2>
+        <p className="mt-4 text-lg text-[#fefae0]/80 max-w-2xl mx-auto">
+          This isn’t just another event. It’s a celebration, a revelation, a
+          renaissance.
+        </p>
+      </div>
 
-        <div className="space-y-16">
-          {features.map((f, i) => (
-            <div
-              key={i}
-              className={`flex flex-col md:flex-row ${
-                f.flip ? "md:flex-row-reverse" : ""
-              } items-center gap-10`}
-            >
-              <div className="text-6xl">{f.icon}</div>
-              <div className="max-w-md">
-                <h3 className="text-2xl font-semibold mb-2">{f.title}</h3>
-                <p className="text-gray-200">{f.description}</p>
-              </div>
+      <div className="space-y-10 max-w-3xl mx-auto">
+        {points.map((point, index) => (
+          <div key={index} className="flex items-start gap-4">
+            <div className="shrink-0">{point.icon}</div>
+            <div>
+              <h3 className="text-xl font-semibold">{point.title}</h3>
+              <p className="text-[#fefae0]/80">{point.desc}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
-};
-
-export default WhyAttend;
+}

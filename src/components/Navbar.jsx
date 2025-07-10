@@ -5,14 +5,14 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative bg-gray-100/80 backdrop-blur-md rounded-full w-full px-6  z-10 py-2 shadow-md flex justify-between items-center max-w-6xl mx-auto">
+    <nav className="relative bg-gray-100/80 backdrop-blur-md rounded-full w-full px-6 sm:px-8 md:px-12  z-10 py-1.5 shadow-md flex justify-between items-center max-w-6xl mx-auto">
       {/* Logo */}
       <div className="w-12">
         <img src="/logos/logo-2.png" alt="Loop AI Logo" />
       </div>
 
       {/* Desktop Nav */}
-      <ul className="hidden md:flex gap-6 font-medium">
+      <ul className="hidden md:flex text-slate-900 gap-6 font-medium">
         <li>
           <a href="#" className="hover:text-purple-500 transition">
             Home
